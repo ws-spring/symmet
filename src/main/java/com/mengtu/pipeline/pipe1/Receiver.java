@@ -34,7 +34,7 @@ public class Receiver extends Thread
         // readMessageOnce() ;
         List<Person> pList = new ArrayList<Person>();
         String res=readMessageContinued();
-        pList=new Gson().
+//        pList=new Gson().
     }
 
     // 从“管道输入流”中读取1次数据

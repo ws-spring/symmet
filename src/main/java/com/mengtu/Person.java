@@ -101,13 +101,6 @@ public class Person
             ss2.add(temp);
         }
         System.out.println(ss2.toString());
-        // [1, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 26, 27, 28]
-           [1, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 26, 27, 28]
-                   
-                   2 3 4 5 6 22 23 24 25 
-                   3 6 22
-                   2 4 5 23 24 25 
-
     }
 
     public static List<String> resSrc(String htmlStr, String regEx_img)
