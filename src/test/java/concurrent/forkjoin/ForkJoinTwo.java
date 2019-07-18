@@ -1,4 +1,4 @@
-package symmet;
+package concurrent.forkjoin;
 
 import java.util.Arrays;
 import java.util.Random;
