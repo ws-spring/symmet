@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.RecursiveTask;
-
-import ch.qos.logback.core.util.FileUtil;
+import concurrent.util.DigestUtil;
+import concurrent.util.FileUtil;
 
 public class GenMd5Task extends RecursiveTask<Map<String, String>> {
     private HashMap<String, String> mMap;

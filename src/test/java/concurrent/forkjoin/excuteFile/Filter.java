@@ -19,6 +19,11 @@ public class Filter {
     static List<File> mList = new ArrayList<>();
 
     public static void main(String[] args) {
+//        String FilePath="D:\\FFFFF\\website\\src\\main\\resources\\static\\webapp";
+        String FilePath="D:\\FFFFF\\website\\src\\main\\resources\\static\\upload\\images";
+        File file=new File(FilePath);
+        args=file.list();
+        System.out.println(args.length);
         for (int i = 0; i < args.length; i++) {
             switch (args[i]) {
             /* 指定并行执行所需线程数量 eg (-j 8) 指定线程池有8个线程*/
@@ -30,6 +35,7 @@ public class Filter {
                 default:
                     mList.add(new File(args[i]));
                     break;
+                    
             }
         }
 
@@ -44,7 +50,7 @@ public class Filter {
         long start = 0;
         long end1 = 0;
         long end2 = 0;
-
+        //
         private List<GenMd5Task> mTasks = new ArrayList<>();
         private List<Map<String, String>> mapList = new ArrayList<>();
 
@@ -56,7 +62,7 @@ public class Filter {
 
         public List<Map<String, String>> invokeTask() {
             end1 = end2 = start = System.currentTimeMillis();
-
+            
             for (File file : mList) {
                 /* 划分的子任务*/ 
                 GenMd5Task task = new GenMd5Task(file);
